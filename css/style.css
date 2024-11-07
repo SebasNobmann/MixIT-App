@@ -24,7 +24,7 @@ body {
     background-size: cover;
     display: flex;
     align-items: center;
-    padding: 200px 0;
+    padding: 150px 0;
     position: relative;
     justify-content: center;
 }
@@ -176,7 +176,6 @@ p {
 }
 .about-txt {
     flex-basis: 50%;
-    padding-right: 12px;
 }
 .about-txt__info {
     display: flex;
@@ -305,6 +304,7 @@ h4 {
 }
 .comunity-video {
     width: 500px;
+    max-width: 100%;
     border-radius: 30px;
     display: flex;
 }
@@ -364,7 +364,7 @@ h4 {
     margin-right: 3px;
 }
 .remember-psd a {
-    color: #FFFFFF;
+    color: #ffe1b5;
     text-decoration: none;
 }
 .remember-psd a:hover {
@@ -387,6 +387,9 @@ h4 {
     font-size: 14px;
     text-align: center;
     margin: 20px 0 10px;
+}
+.register p {
+    color: #FFFFFF;
 }
 .register p a {
     color: #FFFFFF;
@@ -417,6 +420,10 @@ h4 {
     color: #ffffff;
     line-height: 1.4;
     font-size: 18px;
+    flex-basis: 60%;
+}
+.footer-suscribe .input-group {
+    flex-basis: 40%;
 }
 .footer-links {
     display: flex;
@@ -494,7 +501,15 @@ h4 {
         box-shadow: 0 0 0 100vmax rgba(0,0,0,0.5);
     }
     .burger-menu, .close-menu {
+        width: 32px;
         display: block;
+        padding: 0;
+        border: 0;
+        color: #FFFFFF;
+        background-color: #f8ac3b00;
+    }
+    .burger-menu i {
+        font-size: 32px;
     }
     .navbar.visible {
         opacity: 1;
@@ -548,6 +563,10 @@ h4 {
     .delivery-brands {
         grid-template-columns: repeat(2, 1fr);
     }
+    .wrapper {
+        max-width: 90%;
+        margin-top: 80px;
+    }
     .footer {
         padding: 30px;
     }
@@ -557,11 +576,59 @@ h4 {
     .footer-suscribe {
         flex-direction: column;
         text-align: center;
-        gap:0
+        gap:0;
+        align-items: center;
     }
     .footer-links {
-        grid-template-columns: repeat(2, 1fr);
-        flex-direction: column;
+        grid-template-columns: repeat(1fr, 1fr);
+        flex-wrap: wrap;
         gap: 24px;
+    }
+    .footer-rights {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .footer-links__logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:522px) {
+    .header-txt h1 {
+        font-size: 36px;
+        line-height: 36px;
+        text-transform: uppercase;
+        font-family: "Knockout-Regular";
+        margin-top: 80px;
+        margin-bottom: 32px;
+    }
+    .header-buttons {
+        flex-direction: column;
+        gap: 16px;
+    }
+    .about-txt__info {
+        justify-content: space-between;
+    }
+    .drinks-ref {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 32px;
+    }
+    .wrapper {
+        max-width: 90%;
+        margin-top: 80px;
+        padding: 30px 8%;
+    }
+    .wrapper .remember-psd {
+        flex-direction: column;
+        gap: 4px;
+    }
+}
+
+@media screen and (min-width:1100px) {
+    .container {
+        max-width: 1024px;
+        margin: 0 auto;
     }
 }
