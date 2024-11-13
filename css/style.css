@@ -405,6 +405,13 @@ h4 {
   text-decoration: underline;
 }
 
+.comunity-video {
+    width: 500px;
+    max-width: 100%;
+    border-radius: 30px;
+    display: flex;
+}
+
 .footer {
   background-color: #040404;
   padding-top: 60px;
@@ -423,6 +430,7 @@ h4 {
   line-height: 1.4;
   font-size: 18px;
   flex-basis: 60%;
+  margin-bottom: 0;
 }
 .footer .footer-content .footer-suscribe h4 span {
   color: #f8ad3b;
@@ -540,7 +548,7 @@ h4 {
     text-align: center;
     padding: 0;
   }
-  .header-txt h1 {
+  .header .header-content .header-txt h1 {
     color: #ffffff;
     font-size: 50px;
     line-height: 50px;
@@ -611,7 +619,7 @@ h4 {
   }
 }
 @media screen and (max-width: 522px) {
-  .header-txt h1 {
+ .header .header-content .header-txt h1 {
     font-size: 36px;
     line-height: 36px;
     text-transform: uppercase;
