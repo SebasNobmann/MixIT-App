@@ -1,0 +1,93 @@
+.wrapper {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    color: $white;
+    border-radius: 25px;
+    padding: 30px 40px;
+    form {
+        h1 {
+            font-size: 24px;
+            font-family: "Knockout-Regular";
+            text-align: center;
+        }
+        .input-box {
+            position: relative;
+            width: 100%;
+            height: 50px;
+            margin: 30px 0;
+            input {
+                width: 100%;
+                height: 100%;
+                background: transparent;
+                border: none;
+                outline: none;
+                border: 2px solid rgba(255, 255, 255, .2);
+                border-radius: 40px;
+                font-size: 16px;
+                color: $white;
+                padding: 20px 45px 20px 20px;
+                &::placeholder {
+                    color: $white;
+                }
+            }
+            i {
+                position: absolute;
+                right: 20px;
+                top: 50%;
+                transform: translateY(-50%);
+                font-size: 20px;
+            }
+        }
+        .remember-psd {
+            display: flex;
+            justify-content: space-between;
+            font-size: 14px;
+            margin: -15px 0 15px;
+            label {
+                input {
+                    accent-color: $white;
+                    margin-right: 3px;
+                }
+            }
+            a {
+                color: #ffe1b5;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+        }
+        .btn {
+            width: 100%;
+            height: 45px;
+            background:$orange;
+            border: none;
+            outline: none;
+            border-radius: 40px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            cursor: pointer;
+            font-size: 16px;
+            color: $white;
+            font-weight: 600;
+        }
+        .register {
+            font-size: 14px;
+            text-align: center;
+            margin: 20px 0 10px;
+            p {
+                color: $white;
+                a {
+                    color: $white;
+                    text-decoration: none;
+                    font-weight: 600;
+                    &:hover {
+                        text-decoration: underline;
+                    }
+                }
+            }
+        }
+    }
+}
