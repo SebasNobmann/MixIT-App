@@ -1,0 +1,91 @@
+.footer {
+    background-color: $dark;
+    padding-top: 60px;
+    padding-bottom: 16px;
+    .footer-content {
+        padding: 0;
+        .footer-suscribe {
+            display: flex;
+            gap: 32px;
+            align-items: flex-start;
+            h4 {
+                color: $white;
+                line-height: 1.4;
+                font-size: 18px;
+                flex-basis: 60%;
+                span {
+                    color: $orange;
+                }
+            }
+            .input-group {
+                flex-basis: 40%;
+            }
+        }
+        hr {
+            height: 3px;
+            background-color: $white;
+            margin: 4px 0;
+            display: flex;
+        }
+        .footer-links {
+            display: flex;
+            gap: 60px;
+            margin: 32px 0;
+            .footer-links__list {
+                width: 160px;
+                h5 {
+                    list-style: none;
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 18px;
+                    font-weight: 600;
+                    margin-bottom: 32px;
+                }
+                ul {
+                    margin: 24px 0;
+                    li {
+                        margin: 12px 0;
+                        a {
+                            font-size: 16px;
+                            list-style: none;
+                            text-decoration: none;
+                            color: $white;
+                            line-height: 1;
+                            &:hover {
+                                color: #ffe1b5;
+                                text-decoration: underline;
+                            }
+                        }
+                    }
+                }
+                .footer-links__media {
+                    display: flex;
+                    gap: 12px;
+                    li {
+                        a {
+                            .media-icon {
+                                width: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+            .footer-links__logo {
+                a {
+                    img {
+                        width: 150px;
+                    }
+                }
+            }
+        }
+        .footer-rights {
+            display: flex;
+            justify-content: space-between;
+            padding-top: 12px;
+            h6 {
+                color: #505050;
+                font-size: 12px;
+            }
+        }
+    }
+}

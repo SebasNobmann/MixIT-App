@@ -1,0 +1,159 @@
+.about {
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    .about-txt {
+        flex-basis: 50%;
+        h2 {
+            font-size: 32px;
+            color: $grey;
+            margin-bottom: 32px;
+            line-height: 1;
+            font-family: "Knockout-Regular";
+            span {
+                color: $orange;
+            }
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            font-weight: 400;
+            color: $grey;
+            margin-bottom: 40px;
+        }
+        h4 {
+            font-size: 20px;
+            color: $grey;
+            margin-bottom: 24px;
+            line-height: 1;
+            font-family: "Knockout-Regular";
+        }
+        .about-txt__info {
+            display: flex;
+            gap: 24px;
+            .about-txt__info-box {
+                align-items: center;
+                text-align: center;
+                .about-txt_number {
+                    font-size: 36px;
+                    color: $orange;
+                    line-height: 1;
+                    margin-bottom: 0px;
+                    font-family: "Knockout-Regular";
+                }
+                .about-txt_tip {
+                    font-size: 11px;
+                    color: $grey;
+                    line-height: 1;
+                    margin-bottom: 8px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+    .about-img {
+        flex-basis: 50%;
+        img {
+            width: 500px;
+        }
+    }
+}
+.drinks {
+    width: 100%;
+    padding: 60px 0;
+    align-items: center;
+    text-align: center;
+    background-color: $dark;
+    .drinks-content {
+        padding: 0;
+        h2 {
+            color: $white;
+            margin-bottom: 60px;
+            span {
+                color: $orange;
+            }
+        }
+        .drinks-ref {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            .drinks-ref__cocktail {
+                img {
+                    margin-bottom: 24px;
+                    border-radius: 24px;
+                }
+                h3 {
+                    font-size: 18px;
+                    font-family: "Knockout-Regular";
+                    color: $white;
+                }
+            }
+        }
+    }
+}
+.delivery {
+    padding: 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    .delivery-content {
+        display: flex;
+        align-items: center;
+        gap: 80px;
+        .delivery-img {
+            flex-basis: 50%;
+            img {
+                width: 500px;
+            }
+        }
+        .delivery-txt {
+            flex-basis: 50%;
+            h2 {
+                span {
+                    color: $orange;
+                }
+            }
+            p {
+                margin-bottom: 40px;
+            }
+            .delivery-btn {
+                display: inline-block;
+                background-color: $white;
+                border: 3px solid $orange;
+                padding: 8px 24px;
+                width: 200px;
+                border-radius: 25px;
+                color: $grey;
+                text-decoration: none;
+                font-weight: 600;
+                text-align: center;
+                &:hover {
+                    background-color: #f8ba5e;
+                    border: 3px solid #ffe1b5;
+                    color: $white;
+                }
+            }
+        }
+    }
+    .delivery-brands {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        align-items: center;
+        gap: 40px;
+        justify-content: space-between;
+        .brands-img {
+
+        }
+    }
+}
+.download {
+    padding-bottom: 60px;
+    padding-left: 0;
+    padding-right: 0;
+    .download-banner {
+        .banner {
+
+        }
+    }
+}
