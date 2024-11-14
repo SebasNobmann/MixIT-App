@@ -498,14 +498,14 @@ h4 {
 }
 
 @media screen and (max-width: 991px) {
-  .menu {
+  .header .menu {
     padding: 20px;
   }
-  .navbar {
+  .header .navbar {
     opacity: 0;
     visibility: hidden;
   }
-  .navbar {
+  .header .navbar {
     position: absolute;
     top: 0;
     right: 0;
@@ -523,7 +523,7 @@ h4 {
     background-color: #040404;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
-  .burger-menu, .close-menu {
+  .header .menu .burger-menu, .close-menu {
     width: 32px;
     display: block;
     padding: 0;
@@ -531,7 +531,7 @@ h4 {
     color: #ffffff;
     background-color: rgba(248, 172, 59, 0);
   }
-  .burger-menu i {
+  .header .menu .burger-menu i {
     font-size: 32px;
   }
   .navbar.visible {
@@ -544,7 +544,7 @@ h4 {
   .header {
     padding: 50px 30px;
   }
-  .header-txt {
+  .header .header-content .header-txt {
     text-align: center;
     padding: 0;
   }
@@ -556,7 +556,7 @@ h4 {
     margin-top: 60px;
     margin-bottom: 32px;
   }
-  .header-txt p {
+  .header .header-content .header-txt p {
     padding: 0;
   }
   .about {
@@ -566,24 +566,24 @@ h4 {
     gap: 24px;
     margin-top: 32px;
   }
-  .about-txt__info {
+  .about .about-txt .about-txt__info {
     justify-content: center;
   }
   .drinks {
     padding: 40px;
   }
-  .drinks-ref {
+  .drinks .drinks-content .drinks-ref {
     grid-template-columns: repeat(2, 1fr);
   }
   .delivery {
     padding: 30px;
   }
-  .delivery-content {
+  .delivery .delivery-content {
     flex-direction: column;
     text-align: center;
     gap: 40px;
   }
-  .delivery-brands {
+  .delivery .delivery-brands {
     grid-template-columns: repeat(2, 1fr);
   }
   .wrapper {
@@ -593,26 +593,26 @@ h4 {
   .footer {
     padding: 30px;
   }
-  .footer-content {
+  .footer .footer-content {
     flex-direction: column;
   }
-  .footer-suscribe {
+  .footer .footer-content .footer-suscribe {
     flex-direction: column;
     text-align: center;
-    gap: 0;
+    gap: 24px;
     align-items: center;
   }
-  .footer-links {
+  .footer .footer-content .footer-links {
     grid-template-columns: repeat(1fr, 1fr);
     flex-wrap: wrap;
     gap: 24px;
   }
-  .footer-rights {
+  .footer .footer-content .footer-rights {
     display: flex;
     flex-direction: column;
     text-align: center;
   }
-  .footer-links__logo {
+  .footer .footer-content .footer-links .footer-links__logo {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -627,14 +627,14 @@ h4 {
     margin-top: 80px;
     margin-bottom: 32px;
   }
-  .header-buttons {
+  .header .header-content .header-txt .header-buttons {
     flex-direction: column;
     gap: 16px;
   }
-  .about-txt__info {
+  .about .about-txt .about-txt__info {
     justify-content: space-between;
   }
-  .drinks-ref {
+  .drinks .drinks-content .drinks-ref {
     grid-template-columns: repeat(1, 1fr);
     gap: 32px;
   }
@@ -643,7 +643,7 @@ h4 {
     margin-top: 80px;
     padding: 30px 8%;
   }
-  .wrapper .remember-psd {
+  .wrapper form .remember-psd {
     flex-direction: column;
     gap: 4px;
   }
