@@ -592,9 +592,12 @@ h4 {
   }
   .footer {
     padding: 30px;
+    display: flex;
+    justify-content: center;
   }
   .footer .footer-content {
     flex-direction: column;
+    margin: 0;
   }
   .footer .footer-content .footer-suscribe {
     flex-direction: column;
@@ -630,6 +633,9 @@ h4 {
   .header .header-content .header-txt .header-buttons {
     flex-direction: column;
     gap: 16px;
+  }
+  .header .header-content .header-txt .header-buttons .header-btn-1, .header .header-content .header-txt .header-buttons .header-btn-2 {
+    width: 90%;
   }
   .about .about-txt .about-txt__info {
     justify-content: space-between;
