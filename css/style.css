@@ -89,14 +89,14 @@ h4 {
   width: 25px;
   display: none;
 }
-.header .menu .navbar .close-menu {
+.header .menu .navbar .btn-close {
   display: none;
 }
-.header .menu .navbar ul li {
+.header .menu .navbar .navbar-list li {
   position: relative;
   float: left;
 }
-.header .menu .navbar ul li a {
+.header .menu .navbar .navbar-list li a {
   font-size: 16px;
   color: #ffffff;
   display: block;
@@ -104,7 +104,7 @@ h4 {
   text-decoration: none;
   padding: 20px;
 }
-.header .menu .navbar ul li a:hover {
+.header .menu .navbar .navbar-list li a:hover {
   color: #ffe1b5;
 }
 .header .header-content .header-txt {
@@ -176,11 +176,8 @@ h4 {
   flex-basis: 50%;
 }
 .about .about-txt h2 {
-  font-size: 32px;
   color: #2e2e2e;
   margin-bottom: 32px;
-  line-height: 1;
-  font-family: "Knockout-Regular";
 }
 .about .about-txt h2 span {
   color: #f8ad3b;
@@ -504,26 +501,36 @@ h4 {
   .header .navbar {
     opacity: 0;
     visibility: hidden;
-  }
-  .header .navbar {
-    position: absolute;
-    top: 0;
-    right: 0;
-    bottom: 0;
     display: flex;
     flex-direction: column;
     align-items: end;
-    flex-wrap: nowrap;
+    justify-content: flex-start;
     gap: 1rem;
-  }
-  .navbar-list {
-    display: flex;
-    flex-direction: column;
-    align-items: end;
-    background-color: #040404;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    height: 100vh;
+    width: 65%;
+    background: linear-gradient(#040404 60%, #1d1d1d);
+    padding: 45px 40px;
     box-shadow: 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   }
-  .header .menu .burger-menu, .close-menu {
+  .header .visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translatex(9%);
+    transition: all 1s;
+  }
+  .header .menu .navbar .navbar-list {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+  }
+  .header .menu .navbar .navbar-list li a {
+    font-size: 18px;
+    font-weight: 600;
+  }
+  .header .menu .navbar .btn-close, .header .menu .burger-menu {
     width: 32px;
     display: block;
     padding: 0;
@@ -531,15 +538,12 @@ h4 {
     color: #ffffff;
     background-color: rgba(248, 172, 59, 0);
   }
+  .header .menu .navbar .btn-close {
+    font-size: 20px;
+  }
   .header .menu .burger-menu i {
+    display: block;
     font-size: 32px;
-  }
-  .navbar.visible {
-    opacity: 1;
-    visibility: visible;
-  }
-  #menu:checked ~ .navbar {
-    display: initial;
   }
   .header {
     padding: 50px 30px;
@@ -622,6 +626,9 @@ h4 {
   }
 }
 @media screen and (max-width: 522px) {
+  h2 {
+    font-size: 26px;
+  }
  .header .header-content .header-txt h1 {
     font-size: 36px;
     line-height: 36px;

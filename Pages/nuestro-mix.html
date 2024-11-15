@@ -16,14 +16,14 @@
 <body>
     <header class="header">
         <video autoplay loop muted class="header__back-video">
-            <source src="../videos/vid-lemonice.mp4" type="video/mp4">
+            <source src="../videos/vid-lemonice.webm" type="video/mp4">
         </video>
         <div class="screen"></div>
         <div class="menu container">
             <a href="../index.html" class="logo"><img src="../Images/logo-mixitapp2.png" class="logo-icono" alt="mixitapp-logo"></a>
-            <button class="burger-menu"><i class="bi bi-list"></i></button>
-            <nav class="navbar">
-                <button class="close-menu">cerrar</button>
+            <button id="open" class="burger-menu"><i id="open" class="bi bi-list"></i></button>
+            <nav class="navbar" id="navbar">
+                <button id="close" type="button" class="btn-close btn-close-white" aria-label="Close"></button>
                 <ul class="navbar-list">
                     <li><a href="#">Nuestro Mix</a></li>
                     <li><a href="comunidad.html">Comunidad</a></li>
@@ -131,6 +131,7 @@
             </div>
         </div> 
     </footer>
+    <script src="../js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>  
 </body>
 </html>
