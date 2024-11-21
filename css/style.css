@@ -646,7 +646,10 @@ h4 {
     width: 90%;
   }
   .about .about-txt .about-txt__info {
-    justify-content: space-between;
+    gap: 16px;
+  }
+  .about .about-txt .about-txt__info .about-txt__info-box .about-txt_number {
+    font-size: 32px;
   }
   .drinks .drinks-content .drinks-ref {
     grid-template-columns: repeat(1, 1fr);
