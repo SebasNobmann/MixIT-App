@@ -41,7 +41,7 @@ h4 {
 }
 
 .header {
-  background-image: linear linear-gradient(rgba(0, 0, 0, 0.58), rgba(0, 0, 0, 0.5));
+  background-image: linear linear-gradient(rgba(0, 0, 0, 0.747), rgba(0, 0, 0, 0.842));
   background-position: center bottom;
   background-repeat: no-repeat;
   background-size: cover;
@@ -61,6 +61,16 @@ h4 {
   height: 100%;
   object-fit: cover;
 }
+.header .header__back-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .header .screen {
   position: absolute;
   top: 0;
@@ -69,8 +79,7 @@ h4 {
   height: 100%;
   z-index: -1;
   background: #040404;
-  opacity: 0.2;
-  mix-blend-mode: overlay;
+  opacity: 0.6;
 }
 .header .menu {
   position: absolute;
